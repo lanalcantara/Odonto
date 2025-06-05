@@ -1,0 +1,15 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/dental-database/page": "app/dental-database/page.js",
+  "/cases/page": "app/cases/page.js",
+  "/evidence/upload/page": "app/evidence/upload/page.js",
+  "/cases/[id]/page": "app/cases/[id]/page.js",
+  "/users/[id]/permissions/page": "app/users/[id]/permissions/page.js",
+  "/login/page": "app/login/page.js",
+  "/reports/new/page": "app/reports/new/page.js",
+  "/register/page": "app/register/page.js",
+  "/users/page": "app/users/page.js",
+  "/reports/[id]/page": "app/reports/[id]/page.js",
+  "/reports/page": "app/reports/page.js"
+}
