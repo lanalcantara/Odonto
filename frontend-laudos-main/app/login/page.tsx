@@ -11,7 +11,7 @@ import { toast } from "@/components/ui/use-toast";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [senha, setsenha] = useState("");
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
@@ -20,12 +20,12 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://gestaodelaudosback.onrender.com/login", {
+      const response = await fetch("https://odontoforense-backend-2.onrender.com/api/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, senha }),
       });
 
       if (!response.ok) {
@@ -75,16 +75,16 @@ export default function LoginPage() {
           </div>
           <div className="space-y-2">
             <div className="flex items-center justify-between">
-              <Label htmlFor="password">Senha</Label>
-              <Link href="/forgot-password" className="text-sm text-primary underline-offset-4 hover:underline">
+              <Label htmlFor="senha">Senha</Label>
+              <Link href="/forgot-senha" className="text-sm text-primary underline-offset-4 hover:underline">
                 Esqueceu a senha?
               </Link>
             </div>
             <Input
-              id="password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              id="senha"
+              type="senha"
+              value={senha}
+              onChange={(e) => setsenha(e.target.value)}
               required
             />
           </div>
